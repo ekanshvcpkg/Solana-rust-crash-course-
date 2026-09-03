@@ -1,0 +1,42 @@
+
+
+// fix list which has the same data types 
+pub fn run () { 
+
+    let mut numbers:Vec<i32>= vec![1,2,3,4,5];  // this need to be fix size if not error <if you don't add mut it is all good>
+    // fix type if not error 
+
+    // add using push
+    numbers.push(54);
+    numbers.push(65);
+
+    // removing element using pop
+
+    numbers.pop();
+
+    // if mut 
+    let mut numbers_but_mut:[i32; 5 ] = [1,2,3,4,5]; 
+
+    println!("{:?}", numbers);
+
+    // to get the single value 
+    println!("{}" , numbers[0]);
+    println!("{}", numbers_but_mut.len());
+
+
+    // arrays are stack allocated 
+    println!("vector ocp there may bytes ->{}", std::mem::size_of_val(&numbers)); // &numbers is a reference. More precisely, an immutable reference in Rust
+
+    //get slice 
+
+    let slice: &[i32] = &numbers[1..3]; // give from index 1 to 2 
+    // ! numbers[1..2] → creates a slice from index 1 up to (but not including) 2
+    println!("slic:{:?}", slice);
+
+    // Loop through vector values 
+    for x in numbers.iter() {  // this will give you the full array like using a for loop 
+        println!("{}", x)
+    }
+
+
+}

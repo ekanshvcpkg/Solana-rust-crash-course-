@@ -9,7 +9,9 @@
 // mod  types;
 // mod  string;
 // mod  tuples;
-mod arrays;
+// mod arrays;
+// mod  vectors;
+mod Conditionals;
 
 fn main() {
 
@@ -27,7 +29,9 @@ fn main() {
     // types::run();
     // string::run();
      // tuples::run();
-     arrays::run();
+    //  arrays::run();
+    //  vectors::run();
+    Conditionals::run();
 
 
 

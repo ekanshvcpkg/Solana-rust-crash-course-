@@ -1,4 +1,4 @@
-use core::slice;
+
 
 // fix list which has the same data types 
 pub fn run () { 
